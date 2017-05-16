@@ -1,4 +1,4 @@
-var pie = new d3pie("pieChart", {
+var pie = new d3pie("pie", {
 	"header": {
 		"title": {
 			"text": "Media of Portland Art",
@@ -22,8 +22,8 @@ var pie = new d3pie("pieChart", {
 	"size": {
 		"canvasHeight": 540,
 		"canvasWidth": 610,
-		"pieInnerRadius": "70%",
-		"pieOuterRadius": "96%"
+		"pieInnerRadius": "50%",
+		"pieOuterRadius": "110%"
 	},
 	"data": {
 		"sortOrder": "label-desc",
@@ -51,7 +51,7 @@ var pie = new d3pie("pieChart", {
 				"color": "#961919"
 			},
 			{
-				"label": "Water Fountain",
+				"label": "Water Fountains",
 				"value": 3,
 				"color": "#d8d239"
 			},
@@ -66,23 +66,23 @@ var pie = new d3pie("pieChart", {
 				"color": "#d0743c"
 			},
 			{
-				"label": "Mosaic",
+				"label": "Mosaics",
 				"value": 2,
 				"color": "#635122"
 			},
 			{
-				"label": "Mural",
+				"label": "Murals",
 				"value": 80,
 				"color": "#6ada6a"
 			},
 			{
-				"label": "Painting",
+				"label": "Paintings",
 				"value": 149,
 				"caption": "Really cool building stuff",
 				"color": "#0b6197"
 			},
 			{
-				"label": "Photographhy",
+				"label": "Photography",
 				"value": 30,
 				"color": "#7c9058"
 			},
