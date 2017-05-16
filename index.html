@@ -4,10 +4,12 @@
     <title>Portland D3 Charts</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" media="screen" charset="utf-8">
+   <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="js/beer.js"></script>
     <script src="js/sunburst.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
   </head>
   <body>
     <div id="sunburst"></div>
@@ -17,5 +19,16 @@
         sunburst();
       });
     </script>-->
+    <div class="beer">
+      <h1>
+        Portland's Most Popular Brew
+      </h1>
+      <h3>What do you think is Portland's prominent beer?</h3>
+      <h4><span class="beerResults">Select a style to see the results.</span></h4>
+      <div class="beerGraph">
+        <svg id = "beerSvg" width="960" height="1000"></svg>
+
+      </div>
+    </div>   <!--End Beer-->
   </body>
 </html>
