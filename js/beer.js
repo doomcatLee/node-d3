@@ -2,7 +2,7 @@ $(function(){
   var svg = d3.select("#beerSvg"),
     margin = {top: 20, right: 20, bottom: 30, left: 80},
     width = 800;
-    height = 800;
+    height = 500;
 
     var tooltip = d3.select(".beerGraph").append("div").attr("class", "toolTip");
 
@@ -13,13 +13,13 @@ $(function(){
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     var data = [
-          {label:"American IPA", value:1452},
+          {label:"IPA", value:1452},
           {label:"Saison", value:645},
-          {label:"American Wild Ale", value:177},
+          {label:"Wild Ale", value:177},
           {label:"Fruit Beer", value:207},
           {label:"Sour Ale", value:522},
-          {label:"Americal Pale Ale", value:667},
-          {label:"Imperial", value:436}
+          {label:"Pale Ale", value:667},
+          {label:"Imperial/Double", value:436}
       ];
       x.domain([0, d3.max(data, function(d) { return d.value; })]);
       y.domain(data.map(function(d) { return d.label; })).padding(0.2);
