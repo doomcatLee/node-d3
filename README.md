@@ -2,7 +2,7 @@
 
 ### May 16, 2017
 
-#### By *_Stormi Hoebelheinrich, Kaya Winn, Alex Lee, Black Womack, and Chris Wainner_*
+#### By *_Stormi Hoebelheinrich, Kaya Winn, Alex Lee, Blake Womack, and Chris Wainner_*
 
 ## Description
 
@@ -24,4 +24,4 @@
 
 **_MIT License_**
 
-Copyright &copy; 2017 **_Stormi Hoebelheinrich, Kaya Winn, Alex Lee, Black Womack, and Chris Wainner_**
+Copyright &copy; 2017 **_Stormi Hoebelheinrich, Kaya Winn, Alex Lee, Blake Womack, and Chris Wainner_**
