@@ -15,10 +15,10 @@
 
 ## Technologies Used
 
-`D3`
-`JavaScript`
-`HTML`
-`CSS`
+`D3`  
+`JavaScript`  
+`HTML`  
+`CSS`  
 
 ## License
 
