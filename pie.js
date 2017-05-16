@@ -159,7 +159,7 @@ var pie = new d3pie("pieChart", {
 	"callbacks": {
 		"onMouseoutSegment": null,
 		onClickSegment: function(a) {
-					alert("Segment clicked! See the console for all data passed to the click handler.");
+					alert("Data call out - fill with description?.");
 					console.log(a);
 				}
 	}
@@ -167,8 +167,8 @@ var pie = new d3pie("pieChart", {
 
 var svg = d3.select("textbox")
 			 .append("svg")
-			 .attr("width", w)
-			 .attr("height", h);
+			 .attr("width", 100)
+			 .attr("height", 200);
 
 svg.select("svg #textbox").on("click", function() {
 	 svg.select('p')
