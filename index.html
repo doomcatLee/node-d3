@@ -4,14 +4,26 @@
     <title>Portland D3 Charts</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
     <link rel="stylesheet" href="/css/styles.css" media="screen" charset="utf-8">
-   <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="js/beer.js"></script>
     <script src="js/sunburst.js"></script>
 
   </head>
   <body>
+    <div class="row center-align" id="pageHeader">
+      <br>
+      <h1>
+        Run the Numbers PDX
+      </h1>
+      <br>
+      <a href="https://github.com/winnk/D4" class="waves-effect waves-light btn-large  amber lighten-1">Documentation</a>
+
+    </div>
     <div id="sunburst"></div>
 
     <!--<script>
@@ -21,7 +33,7 @@
     </script>-->
     <div class="beer">
       <h1>
-        Portland's Most Popular Brew
+        Portland's Most Popular Brew Style
       </h1>
       <h3>What do you think is Portland's prominent beer?</h3>
       <h4><span class="beerResults">Select a style to see the results.</span></h4>
