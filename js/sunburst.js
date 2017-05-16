@@ -24,13 +24,13 @@ $(function () {
     .outerRadius(function (d) { return Math.max(0, y(d.y1) - 1); });
 
 
-  var svg = d3.select("body").append("svg")
+  var svg = d3.select("#foodCartGraph")
     .attr("width", width)
     .attr("height", height)
     .append("g")
     .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
 
-  d3.json("../assets/sunburst-data.json", function (error, root) {
+  d3.json("../assets/foodCartData.json", function (error, root) {
     if (error) throw error;
 
     root = d3.hierarchy(root);
