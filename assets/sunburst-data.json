@@ -7,13 +7,25 @@
       {"name": "The Big Egg", "size": 1},
       {"name": "Koi Fusion", "size": 1},
       {"name": "HomeGrown Smoker", "size": 1},
-      {"name": "Native Bowl", "size": 1}
+      {"name": "Native Bowl", "size": 1},
+      {"name": "503 Burger", "size": 1},
+      {"name": "Amigos", "size": 1},
+      {"name": "Dirty Tae Toe", "size": 1},
+      {"name": "Five Mississippi Coffee", "size": 1},
+      {"name": "Roast", "size": 1},
+      {"name": "Teppanyaki Hut", "size": 1},
+      {"name": "White Elephant Asian Fusion", "size": 1},
+      {"name": "Big-Ass Sandwiches", "size": 1},
+      {"name": "Miss Kate's Souther Kitchen", "size": 1},
+      {"name": "Minizo", "size": 1},
+      {"name": "Meet", "size": 1}
     ]
   },
   {
     "name": "Kultural Korner",
     "children": [
-      {"name": "King Burrito", "size": 1}
+      {"name": "King Burrito", "size": 1},
+      {"name": "Ella's Kitchen", "size": 1}
     ]
   },
   {
@@ -23,13 +35,22 @@
     "name": "Alberta15",
     "children":[
       {"name": "Cultured Caveman", "size": 1},
-      {"name": "Organic Island Snow Shave Ice", "size": 1}
+      {"name": "Organic Island Snow Shave Ice", "size": 1},
+      {"name": "Green Monsters", "size": 1},
+      {"name": "Katsu Zoku", "size": 1},
+      {"name": "Stumptown Dumplings", "size": 1}
     ]
   },
   {
     "name": "Q19",
     "children":[
-      {"name": "Brisket's", "size": 1}
+      {"name": "Brisket's", "size": 1},
+      {"name": "Bones & Bits", "size": 1},
+      {"name": "Korean BBQ Box", "size": 1},
+      {"name": "Himalayan Food", "size": 1},
+      {"name": "El Diablito Tortas", "size": 1},
+      {"name": "Wrapmaster Lisa", "size": 1},
+      {"name": "Sawasdee Thai Food", "size": 1}
     ]
   },
   {
