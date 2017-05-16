@@ -48,7 +48,7 @@ $(function () {
         .style("fill", function (d) { return color((d.children ? d : d.parent).data.name); })
         .on("click", click)
       .append("title")
-        .text(function (d) { return d.data.name + "\n" + formatNumber(d.value); });
+        .text(function (d) { return d.data.name + "\n" + d.data.comment; });
   });
 
   function click(d) {
