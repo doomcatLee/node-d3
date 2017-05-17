@@ -78,11 +78,21 @@ h1 {
 #teamDiv{
   position: absolute;
   width: 800px;
-
-  margin: auto;
   padding: 60px;
-  background-color: #f2c41f;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
-.foodCarts{
+/*.foodCarts{
   margin-top: 700px;
+}*/
+#secondLineImage{
+  margin-left: 110px;
+}
+#teamRow {
+  height: 620px;
+  /*background-color: #f2c41f;*/
+
 }
