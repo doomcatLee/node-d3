@@ -11,10 +11,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.6.0/d3.min.js"></script>
     <script src="d3pie.min.js"></script>
     <script src="js/beer.js"></script>
     <script src="js/sunburst.js"></script>
+    <script src="js/bubble_chart.js"></script>
   </head>
   <body>
     <header>
@@ -115,6 +116,21 @@
 
        <script type="text/javascript" src="js/pie.js"></script>
       </div> <!-- end pie -->
+      <div class="bubbleChart">
+        <h1>Oregon Wine Grapes by Variety: Annual Tons Harvested</h1>
+        <div class="chart-example" id="chart"><svg></svg>
+        </div>
+        <script>
+        d3.csv(src="http://localhost:8000/desktop/bubble_chart.csv", function(error, data) {
+          if (error) {
+              console.error('Error getting or parsing the data.');
+              throw error;
+          }
+          var chart = bubbleChart().width(768).height(960);
+          d3.select('#chart').data(data).call(chart);
+        });
+        </script>
+      </div> <!-- end bubble chart -->
     </main>
     <footer class="page-footer black">
        <div class="container">
