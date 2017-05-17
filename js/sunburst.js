@@ -40,7 +40,7 @@ $(function () {
 
     var center = svg.append("circle")
         .data(partition(root).descendants())
-      .attr("r", radius / 2.2)
+      .attr("r", radius / 2)
       .on("click", click);
 
     svg.selectAll("path")

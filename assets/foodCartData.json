@@ -147,9 +147,7 @@
             {"name": "Island Grill", "size": 1},
             {"name": "The Whole Bowl", "size": 1},
             {"name": "Aybla Mediterranean", "size": 1},
-            {"name": "Altengartz Sausages", "size": 1},
             {"name": "I Love Thai Food", "size": 1},
-            {"name": "Eurodish", "size": 1},
             {"name": "Houng's Vietnamese", "size": 1},
             {"name": "Grilled Cheese Downtown", "size": 1}
           ]
@@ -173,11 +171,73 @@
             {"name": "Snow White House", "comment": "Crepes and sandwiches", "size": 1},
             {"name": "The Dump Truck", "comment": "Dumplings!", "size": 1},
             {"name": "Korean Twist", "comment": "Korean tacos, burritos, and rice bowls", "size": 1},
-            {"name": "BBQ Fusion", "comment": "Pulled pork sandwiches and BBQ ribs", "size": 1}
+            {"name": "BBQ Fusion", "comment": "Pulled pork sandwiches and BBQ ribs", "size": 1},
+            {"name": "Eurodish", "comment": "Traditional Polish Home Style Cuisine", "size": 1},
+            {"name": "Nong's Khao Man Gai", "comment": "Classic Thai street food", "size": 1},
+            {"name": "Altengartz German Bratwurst", "comment": "German sausages", "size": 1},
+            {"name": "Savor Soup House", "comment": "Hot bowls of soup", "size": 1}
+          ]
+        },
+        {
+          "name": "SW 10th and Washington",
+          "comment": "SW 10th and Washington",
+          "children": [
+            {"name": "Jook Joint", "comment": "Asian fusion", "size": 1},
+            {"name": "Mac & Trees", "comment": "Mac and cheese delights", "size": 1},
+            {"name": "Sam's Saj Mediterranean Sandwiches", "comment": "Mediterranean dishes", "size": 1},
+            {"name": "Saaj Baghdad", "comment": "Iraqi food cart", "size": 1},
+            {"name": "The Grilled Cheese Grill Downtown", "comment": "Grilled cheese", "size": 1},
+            {"name": "Sheish Kabob", "comment": "Mediterranean cart", "size": 1}
+          ]
+        },
+        {
+          "name": "SW 12th and Yamhill",
+          "comment": "SW 12th and Yamhill",
+          "children": [
+            {"name": "Rosales Taqueria", "comment": "Mexican food cart", "size": 1}
+          ]
+        },
+        {
+          "name": "SW 2nd and Oak",
+          "comment": "SW 2nd and Oak",
+          "children": [
+            {"name": "El Pilon Colombian Food", "comment": "Traditional Colombian food", "size": 1},
+            {"name": "A Taste of Greek", "comment": "Greek food cart", "size": 1}
+          ]
+        },
+        {
+          "name": "SW 2nd and Stark",
+          "comment": "SW 2nd and Stark",
+          "children": [
+            {"name": "Mama Chow's Kitchen", "comment": "Wonton soup and more", "size": 1}
+          ]
+        },
+        {
+          "name": "SW 3rd and Ash",
+          "comment": "SW 3rd and Ash",
+          "children": [
+            {"name": "Mix 'n' Match", "comment": "Liquid Nitrogen Ice Cream", "size": 1},
+            {"name": "La Piñata Takos", "comment": "Mexican food cart", "size": 1}
+          ]
+        },
+        {
+          "name": "SW 3rd and Stark",
+          "comment": "SW 3rd and Stark",
+          "children": [
+            {"name": "Cheesesteak Factory", "comment": "Cheesesteak sandwiches", "size": 1},
+            {"name": "Cultured Caveman on 3rd", "comment": "Peleo food cart", "size": 1},
+            {"name": "Puleha Pizza", "comment": "Hawaiian Pizzas", "size": 1},
+            {"name": "PFE Sushi And Chinese Food", "comment": "Sushi and chinese food cart", "size": 1},
+            {"name": "Francisco Taqueria", "comment": "Mexican food cart", "size": 1},
+            {"name": "Beez Neez", "comment": "Gourmet sausages", "size": 1},
+            {"name": "Just Thai", "comment": "Thai noodle cart", "size": 1},
+            {"name": "DC Vegetarian", "comment": "Vegetarian and vegan eats", "size": 1},
+            {"name": "Taqueria Villanueva", "comment": "Mexican food cart", "size": 1}
           ]
         },
         {
           "name": "SW 5th and Stark",
+          "comment": "SW 5th and Stark",
           "children":[
             {"name": "Aybla Mediterranean Grill", "size": 1},
             {"name": "Saigon", "size": 1},
@@ -196,17 +256,61 @@
         },
         {
           "name": "SW 3rd and Washington",
+          "comment": "SW 3rd and Washington",
           "children":[
-            {"name": "Francisco Taqueria", "size": 1},
-            {"name": "Just Thai", "size": 1},
-            {"name": "Pho Le", "size": 1},
-            {"name": "DC Vegetarian", "size": 1},
-            {"name": "Beez Neez", "size": 1},
-            {"name": "Asia Express", "size": 1},
-            {"name": "Taste of Korea", "size": 1},
-            {"name": "Sonny Bowl", "size": 1},
-            {"name": "Tito's Burritos", "size": 1},
-            {"name": "El Masry Egyptian", "size": 1}
+            {"name": "Rajah's Hawaiian Grill", "comment": "Hawaiian food cart", "size": 1},
+            {"name": "Chicharito's Mexicann Grill", "comment": "Mexican food cart", "size": 1},
+            {"name": "I Heart This Cart", "comment": "Multicultural food cart", "size": 1},
+            {"name": "Batavia", "comment": "Indonesian food cart", "size": 1},
+            {"name": "Taste of Korea", "comment": "Korean street food", "size": 1},
+            {"name": "Sonny Bowl", "comment": "Rice bowls", "size": 1},
+            {"name": "Tito's Burritos", "comment": "Burritos and tacos", "size": 1},
+            {"name": "El Masry Egyptian", "comment": "Egyptian food cart", "size": 1}
+          ]
+        },
+        {
+          "name": "SW 4th and Ankeny",
+          "comment": "SW 4th and Ankeny",
+          "children":[
+            {"name": "Sivad's House of Soul", "comment": "Southern dishes like Chicken and Waffles", "size": 1}
+          ]
+        },
+        {
+          "name": "SW 4th and Burnside",
+          "comment": "SW 4th and Burnside",
+          "children":[
+            {"name": "Donut Byte Labs", "comment": "Mini cake donuts", "size": 1}
+          ]
+        },
+        {
+          "name": "SW 4th and College",
+          "comment": "SW 4th and College",
+          "children":[
+            {"name": "Tandoor's Saffron Indian Kitchen", "comment": "Indian cuisine food cart", "size": 1},
+            {"name": "Nong's Khao Man Gai 2", "comment": "Classic Thai street food", "size": 1},
+            {"name": "Hog and Hen Acadian Kitchen", "comment": "Cajun and French country tradition", "size": 1},
+            {"name": "Sultan's Kitchen", "comment": "Turkish food cart", "size": 1}
+          ]
+        },
+        {
+          "name": "SW 4th and Hall (PSU)",
+          "comment": "SW 4th and Hall (PSU)",
+          "children":[
+            {"name": "Comfortable Yum", "comment": "Rustic quality burgers", "size": 1},
+            {"name": "Lily Oriental Food and Bubble Tea", "comment": "Asian food cart with bubble tea", "size": 1},
+            {"name": "Phat Cart", "comment": "Pulled pork sandwiches and bento boxes", "size": 1},
+            {"name": "New Taste of India at PSU", "comment": "Traditional Indian food", "size": 1},
+            {"name": "Chilango", "comment": "Tacos, burritos, and speciatly bowls", "size": 1},
+            {"name": "Easy Day", "comment": "Thai cuisine including bubble tea", "size": 1},
+            {"name": "Ahla W Sahla", "comment": "Lebanese food cart", "size": 1},
+            {"name": "Original Chopollos Mexican", "comment": "Mexican food cart with seating area", "size": 1},
+            {"name": "Vietnamese Bahn Mi Sandwiches", "comment": "Vietnamese sandwiches", "size": 1},
+            {"name": "Poompui Thai", "comment": "Thai food cart", "size": 1},
+            {"name": "Asia Express", "comment": "Thai cart that serves comfort food", "size": 1},
+            {"name": "Inter Selects", "comment": "Thai food cart", "size": 1},
+            {"name": "Taqueria Villanueva", "comment": "Mexican food cart", "size": 1},
+            {"name": "Thai Pasta", "comment": "Thai noodle food cart", "size": 1},
+            {"name": "Boonrado Thai", "comment": "Thai food cart", "size": 1}
           ]
         }
       ]
