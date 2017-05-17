@@ -30,6 +30,10 @@ h1 {
   text-align: center;
 }
 /*flipping images*/
+.backOfCard {
+  text-align: center;
+  padding: 30px;
+}
 .flip3D {
   width: 200px;
   height: 200px;
@@ -41,7 +45,7 @@ h1 {
   position: center;
   -webkit-transform: perspective( 600px) rotateY( 0deg);
   transform: perspective( 600px) rotateY( 0deg);
-  background: #FC0;
+  background: #f2c41f;
   width: 200px;
   height: 200px;
   border-radius: 7px;
@@ -55,7 +59,7 @@ h1 {
   position: absolute;
   -webkit-transform: perspective( 600px) rotateY( 180deg);
   transform: perspective( 600px) rotateY( 180deg);
-  background: #8ffeee;
+  background: #f2c41f;
   width: 200px;
   height: 200px;
   border-radius: 7px;
