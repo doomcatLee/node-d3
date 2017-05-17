@@ -41,6 +41,16 @@ h1 {
   float: left;
 }
 
+.background {
+  fill: #fff;
+}
+
+.neighborhoods {
+  fill: #bbb;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
 .flip3D > .front {
   position: center;
   -webkit-transform: perspective( 600px) rotateY( 0deg);

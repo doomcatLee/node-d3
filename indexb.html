@@ -1,42 +1,8 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style>
-
-text {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 10px;
-  text-anchor: middle;
-}
-
-.background {
-  fill: #fff;
-}
-
-.neighborhoods {
-  fill: #bbb;
-  stroke: #fff;
-  stroke-linejoin: round;
-}
-
-.symbol {
-  fill: #000;
-  stroke: none;
-}
-
-.labels {
-  fill: none;
-  stroke: #000;
-  stroke-linejoin: round;
-}
-
-.oldlabels {
-  stroke: #cc0000;
-  fill: none;
-}
-
-</style>
+  <link rel="stylesheet" href="/css/styles.css" media="screen" charset="utf-8">
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.v4.min.js"></script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script>
@@ -44,14 +10,14 @@ text {
 var width = 740,
     height = 700;
 
-var projection = d3.geo.conicConformal()
+var projection = d3.geoConicConformal()
     .rotate([120.67, -45.52])
     .parallels([44, 46])
     .scale(125000)
     .center([-1.388, 0.04])
     .translate([width / 2, height / 2]);
 
-var path = d3.geo.path()
+var path = d3.geoPath()
     .projection(projection);
 
 var svg = d3.select("body").append("svg")
