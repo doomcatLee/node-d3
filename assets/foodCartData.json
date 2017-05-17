@@ -150,7 +150,6 @@
             {"name": "Altengartz Sausages", "size": 1},
             {"name": "I Love Thai Food", "size": 1},
             {"name": "Eurodish", "size": 1},
-            {"name": "Taqueria El Rodeo", "size": 1},
             {"name": "Houng's Vietnamese", "size": 1},
             {"name": "Grilled Cheese Downtown", "size": 1}
           ]
@@ -168,7 +167,13 @@
             {"name": "Thai Basil", "comment": "Thai food cart", "size": 1},
             {"name": "Tito's Burritos", "comment": "One of Portland's original food vendors", "size": 1},
             {"name": "Olé Latte Coffee", "comment": "Coffess and Lattes", "size": 1},
-            {"name": "E-San Thai", "comment": "Thai food cart", "size": 1}
+            {"name": "E-San Thai", "comment": "Thai food cart", "size": 1},
+            {"name": "I Like Thai Food", "comment": "Thai food cart", "size": 1},
+            {"name": "Taqueria El Rodeo", "comment": "Tacos and burritos", "size": 1},
+            {"name": "Snow White House", "comment": "Crepes and sandwiches", "size": 1},
+            {"name": "The Dump Truck", "comment": "Dumplings!", "size": 1},
+            {"name": "Korean Twist", "comment": "Korean tacos, burritos, and rice bowls", "size": 1},
+            {"name": "BBQ Fusion", "comment": "Pulled pork sandwiches and BBQ ribs", "size": 1}
           ]
         },
         {
