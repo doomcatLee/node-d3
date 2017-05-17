@@ -11,7 +11,9 @@ $(function () {
   var y = d3.scaleSqrt()
     .range([0, radius]);
 
-  var color = d3.scaleOrdinal(d3.schemeCategory20);
+  var colores_g = ["#3366cc", "#dc3912", "#ff9900", "#109618", "#990099", "#0099c6", "#dd4477", "#66aa00", "#b82e2e", "#316395", "#994499", "#22aa99", "#aaaa11", "#6633cc", "#e67300", "#8b0707", "#651067", "#329262", "#5574a6", "#3b3eac"];
+
+  var color = d3.scaleOrdinal(colores_g);
 
   var partition = d3.partition();
 
@@ -45,7 +47,7 @@ $(function () {
         .data(partition(root).descendants().slice(1))
       .enter().append("path")
         .attr("d", arc)
-        .style("fill", function (d) { return color((d.children ? d : d.parent).data.name); })
+        .style("fill", function (d, i) { return color((d.children ? d : d.parent).data.name); })
         .on("click", click)
       .append("title")
         .text(function (d) { return d.data.name + "\n" + d.data.comment; });
