@@ -3,6 +3,8 @@ $(function () {
     height = 700,
     radius = (Math.min(width, height) / 2) - 10;
 
+  var title = "Portland Food Cart Pods";
+
   var formatNumber = d3.format(",d");
 
   var x = d3.scaleLinear()
@@ -24,7 +26,6 @@ $(function () {
     .padRadius(radius / 3)
     .innerRadius(function (d) { return Math.max(0, y(d.y0)); })
     .outerRadius(function (d) { return Math.max(0, y(d.y1) - 1); });
-
 
   var svg = d3.select("#foodCartGraph")
     .attr("width", width)
@@ -51,12 +52,17 @@ $(function () {
         .on("click", click)
       .append("title")
         .text(function (d) { return d.data.name + "\n" + d.data.comment; });
+
+    $("#foodCartTitle").text(title);
   });
 
   function click(d) {
     svg.transition()
       .duration(600)
       .tween("scale", function () {
+        title = d.data.name;
+        $("#foodCartTitle").text(title);
+        console.log(title);
         var xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
           yd = d3.interpolate(y.domain(), [d.y0, 1]),
           yr = d3.interpolate(y.range(), [d.y0 ? 20 : 0, radius]);
