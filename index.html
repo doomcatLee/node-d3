@@ -121,12 +121,12 @@
         <div class="chart-example" id="chart"><svg></svg>
         </div>
         <script>
-        d3.csv(src="http://localhost:8000/desktop/bubble_chart.csv", function(error, data) {
+        d3.csv(src="/bubble_chart.csv", function(error, data) {
           if (error) {
               console.error('Error getting or parsing the data.');
               throw error;
           }
-          var chart = bubbleChart().width(768).height(960);
+          var chart = bubbleChart().width(768).height(550);
           d3.select('#chart').data(data).call(chart);
         });
         </script>

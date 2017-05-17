@@ -7,7 +7,6 @@ circle {
   fill: none;
   pointer-events: all;
 }
-
 .toolTip {
   position: absolute;
   display: none;
