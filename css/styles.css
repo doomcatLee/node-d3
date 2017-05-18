@@ -19,7 +19,11 @@ circle {
 }
 .beer {
 padding: 80px;}
-
+#colorStripe{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #ffd456;
+}
 #pageHeader {
   min-height: 600px;
   background-image: url(../assets/img/hero.png);
@@ -159,4 +163,11 @@ h1 {
   float: right;
   margin-right: -50px;
   text-align: left;
+}
+#artMap{
+  margin-left: -180px;
+  z-index: 1;
+}
+#pie{
+  z-index: 3;
 }

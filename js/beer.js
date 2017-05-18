@@ -1,5 +1,7 @@
 $(function(){
   console.log("HEY");
+  var hoverColor = "#0099C6";
+  var staticColor  = "#DD4477";
   var svg = d3.select("#beerSvg"),
     margin = {top: 20, right: 20, bottom: 30, left: 80},
     width = 800;
@@ -41,7 +43,7 @@ $(function(){
       .transition()
       .duration(1500)
       .attr("height", y.bandwidth())
-      .style("fill", "#663e11")
+      .style("fill", staticColor)
 
       .attr("y", function(d) { return y(d.label); })
       .attr("width", function(d) { return x(140); });
@@ -57,7 +59,7 @@ $(function(){
       .transition()
       .duration(1500)
       .style("stroke","none")
-      .style("fill", "#663e11");
+      .style("fill", staticColor);
       });
 
 
@@ -93,14 +95,14 @@ $(function(){
           .transition()
           .duration(1500)
           .style("stroke","none")
-          .style("fill", "#663e11");
+          .style("fill", staticColor);
         ;}
       );
       d3.select(".beerResults").html("American IPA is by far the most popular brewed and consumed style of beer in Portland. <a href='http://www.portlandbeer.org/beer/styles'>PortlandBeer.org</a> tracks over 10,000 beers from 99 breweries in PDX. There are currently 1452 American IPAs tracked by PortlandBeer.org");
     });
     g.selectAll(".bar").on('mouseover', function(){
       d3.select(this)
-      .style("fill","#F3CA4F")
-      .style("stroke", "#E3BC47");
+      .style("fill", hoverColor)
+      .style("stroke", hoverColor);
       });
 });
