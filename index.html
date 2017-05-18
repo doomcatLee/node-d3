@@ -115,7 +115,8 @@
       <div class="foodCarts container">
         <h1>Portland's Food Cart Pods</h1>
         <h4>Click a pod to see an expanded view of the carts at that location. Hover over an arc to see the food pod or food cart name.</h4>
-        <div id="foodCartTitle"></div>
+        <br><h4>Current Location</h4>
+        <h5 id="foodCartTitle"></h5>
         <svg id="foodCartGraph"></svg>
       </div> <!--end food carts -->
 
@@ -134,8 +135,9 @@
 
     <!-- Start Pie -->
 
-    <div class="pie">
-      <div id="pie"></div>
+    <div class="pie row">
+      <div id="pie" class="col s6"></div>
+      <div id="artMap" class="col s6"></div>
 
 
       <script type="text/javascript" src="js/pie.js"></script>
@@ -175,7 +177,7 @@ var projection = d3.geoConicConformal()
 var path = d3.geoPath()
     .projection(projection);
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#artMap").append("svg")
     .attr("width", width)
     .attr("height", height);
 
