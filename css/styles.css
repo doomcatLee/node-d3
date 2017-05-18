@@ -33,6 +33,20 @@ padding: 80px;}
 h1 {
   text-align: center;
 }
+#headerText{
+  font-family: 'Russo One', sans-serif;
+  margin: 0px;
+  font-size: 100px;
+  text-align: left;
+  width: 600px;
+  margin-left: 10%;
+}
+.head1{
+  font-size: 116px;
+}
+.head3{
+  font-size: 210px;
+}
 /*flipping images*/
 .backOfCard {
   text-align: center;
@@ -164,12 +178,8 @@ h1 {
   margin-right: -50px;
   text-align: left;
 }
-#artMap{
-  margin-left: -180px;
-  z-index: 1;
-}
-#pie{
-  z-index: 3;
+#pieText{
+  text-align: center;
 }
 .bubble{
   padding-top: 20px;
@@ -188,4 +198,8 @@ h1 {
   display: block;
   margin: auto;
   border-radius: 100%;
+}
+.pie, .bubble, #niggaLee, .foodCarts {
+  margin-top: 50px;
+  margin-bottom: 100px;
 }

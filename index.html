@@ -5,6 +5,7 @@
   <title>Portland D3 Charts</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
   <link rel="icon" href="./assets/img/d3.png">
   <link rel="stylesheet" href="/css/styles.css" media="screen" charset="utf-8">
@@ -26,12 +27,17 @@
 <body>
   <header>
     <div class="row center-align" id="pageHeader">
-      <br>
-      <h1>
-          Run the Numbers PDX
-        </h1>
-      <br>
-      <a href="https://github.com/winnk/D4" class="waves-effect waves-light btn-large  amber lighten-1">Documentation</a>
+      <div class="col m6">
+        <br>
+        <br>
+        <img src="assets/img/run.png" alt="Run The Numbers PDX" width="500px">
+        <br>
+        <br>
+        <br>
+        <a href="https://github.com/winnk/D4" class="waves-effect waves-light btn-large  amber lighten-1">Documentation</a>
+      </div>
+      <div class="col m6">
+      </div>
     </div>
     <div class="row" id="teamRow">
 
@@ -97,7 +103,7 @@
           <div class="back card2back">
             <div class="backOfCard">
               <h6><strong>Alex Lee</strong></h6>
-              <h6>Title</h6>
+              <h6>Race & Income</h6>
             </div>
           </div>
 
@@ -114,9 +120,9 @@
     <main class="center-align">
       <div class="foodCarts container">
         <h1>Portland's Food Cart Pods</h1>
-        <h4>Click a pod to see an expanded view of the carts at that location. Hover over an arc to see the food pod or food cart name.</h4>
-        <br><h4>Current Location</h4>
-        <h5 id="foodCartTitle"></h5>
+        <h4>Click a pod to see an expanded view of the carts at that location. Hover over an arc to see the name of the food cart or pod.</h4>
+        <br>
+        <h4 id="foodCartTitle"></h4>
         <svg id="foodCartGraph"></svg>
       </div> <!--end food carts -->
 
@@ -135,12 +141,14 @@
 <!--End Beer-->
 
     <!-- Start Pie -->
-<hr>
-    <div class="pie row">
-      <div id="pie" class="col s6 right-align">
-      <p id="pieText">The Portland Public Art Committee commissions art that engages with the surrounding environment to create, enrich, or reveal a sense of place, and to express the spirit, values, visions and poetry of place that collectively define Portland.  The media types of Portland public art is illustrated here.</p></div>
+    <div class="pie row container">
+      <div id="pie" class="col l6 right-align">
+        <p id="pieText">The Portland Public Art Committee commissions art that engages with the surrounding environment to create, enrich, or reveal a sense of place, and to express the spirit, values, visions and poetry of place that collectively define Portland.  The media types of Portland public art is illustrated here.</p>
+      </div>
 
-      <div id="artMap" class="col s6"><p id="pieText">As mediators between an inner mental world and an outer physical world, maps are fundamental tools helping the human mind make sense of its universe at various scales. More-over, they are undoubtedly one of the oldest forms of human communication. This map of Multnomah County, comprised of smaller neighborhoods outlines, shows the locations of commission funded art installations. </p></div>
+      <div id="artMap" class="col l6">
+        <p id="pieText">As mediators between an inner mental world and an outer physical world, maps are fundamental tools helping the human mind make sense of its universe at various scales. More-over, they are undoubtedly one of the oldest forms of human communication. This map of Multnomah County, comprised of smaller neighborhoods outlines, shows the locations of commission funded art installations. </p>
+      </div>
 
 
       <script type="text/javascript" src="js/pie.js"></script>
@@ -505,12 +513,6 @@ function makeMap(error, hoods, points, overlap, labels) {
             <li><a class="grey-text text-lighten-3" href="#!">Race & Income</a></li>
           </ul>
         </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
       </div>
     </div>
   </footer>
