@@ -98,7 +98,7 @@ $(function(){
           .style("fill", staticColor);
         ;}
       );
-      d3.select(".beerResults").html("American IPA is by far the most popular brewed and consumed style of beer in Portland. <a href='http://www.portlandbeer.org/beer/styles'>PortlandBeer.org</a> tracks over 10,000 beers from 99 breweries in PDX. There are currently 1452 American IPAs tracked by PortlandBeer.org");
+      d3.select(".beerResults").html("American IPA is by far the most popular brewed and consumed style of beer in Portland. <a href='http://www.portlandbeer.org/beer/styles'>PortlandBeer.org</a> tracks over 10,000 beers from 99 breweries in PDX. There are currently 1452 American IPAs tracked by PortlandBeer.org.");
     });
     g.selectAll(".bar").on('mouseover', function(){
       d3.select(this)
