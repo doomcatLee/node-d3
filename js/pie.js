@@ -158,10 +158,6 @@ var pie = new d3pie("pie", {
 	},
 	"callbacks": {
 		"onMouseoutSegment": null,
-		onClickSegment: function(a) {
-					alert("Data call out - fill with description?.");
-					console.log(a);
-				}
 	}
 });
 
