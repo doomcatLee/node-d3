@@ -27,14 +27,14 @@
 <body>
   <header>
     <div class="row center-align" id="pageHeader">
-        <br>
-        <img src="assets/img/logo.png" alt="Run The Numbers PDX" width="600px">
-        <br>
-        <br>
-        <a href="https://github.com/winnk/D4" class="center-align waves-effect waves-light btn-large  amber lighten-1">Documentation</a>
-        <br>
-        <br>
-  
+      <br>
+      <img src="assets/img/logo.png" alt="Run The Numbers PDX" width="600px">
+      <br>
+      <br>
+      <a href="https://github.com/winnk/D4" class="center-align waves-effect waves-light btn-large  amber lighten-1">Documentation</a>
+      <br>
+      <br>
+
     </div>
     <div class="row" id="teamRow">
 
@@ -100,7 +100,7 @@
           <div class="back card2back">
             <div class="backOfCard">
               <h6><strong>Alex Lee</strong></h6>
-              <h6>Race & Income</h6>
+              <h6>Radar Charts</h6>
             </div>
           </div>
 
@@ -144,11 +144,13 @@
     <!-- Start Pie -->
     <div class="pie row container">
       <div id="pie" class="col l6 right-align">
-        <p id="pieText">The Portland Public Art Committee commissions art that engages with the surrounding environment to create, enrich, or reveal a sense of place, and to express the spirit, values, visions and poetry of place that collectively define Portland.  The media types of Portland public art is illustrated here.</p>
+        <p id="pieText">The Portland Public Art Committee commissions art that engages with the surrounding environment to create, enrich, or reveal a sense of place, and to express the spirit, values, visions and poetry of place that collectively define Portland. The
+          media types of Portland public art is illustrated here.</p>
       </div>
 
       <div id="artMap" class="col l6">
-        <p id="pieText">As mediators between an inner mental world and an outer physical world, maps are fundamental tools helping the human mind make sense of its universe at various scales. More-over, they are undoubtedly one of the oldest forms of human communication. This map of Multnomah County, comprised of smaller neighborhoods outlines, shows the locations of commission funded art installations. </p>
+        <p id="pieText">As mediators between an inner mental world and an outer physical world, maps are fundamental tools helping the human mind make sense of its universe at various scales. More-over, they are undoubtedly one of the oldest forms of human communication.
+          This map of Multnomah County, comprised of smaller neighborhoods outlines, shows the locations of commission funded art installations. </p>
       </div>
 
 
@@ -156,26 +158,26 @@
     </div>
     <div class="bubble">
 
-    <!-- end pie -->
-    <div class="bubbleChart container">
-      <h1>Oregon Wine Grapes</h1>
-      <h4>Annual Tons Harvested of each Variety</h4>
-      <br>
-      <div class="chart-example" id="chart"><svg></svg>
+      <!-- end pie -->
+      <div class="bubbleChart container">
+        <h1>Oregon Wine Grapes</h1>
+        <h4>Annual Tons Harvested of each Variety</h4>
+        <br>
+        <div class="chart-example" id="chart"><svg></svg>
+        </div>
+        <script>
+          d3.csv(src = "/bubble_chart.csv", function(error, data) {
+            if (error) {
+              console.error('Error getting or parsing the data.');
+              throw error;
+            }
+            var chart = bubbleChart().width(768).height(550);
+            d3.select('#chart').data(data).call(chart);
+          });
+        </script>
       </div>
-      <script>
-        d3.csv(src = "/bubble_chart.csv", function(error, data) {
-          if (error) {
-            console.error('Error getting or parsing the data.');
-            throw error;
-          }
-          var chart = bubbleChart().width(768).height(550);
-          d3.select('#chart').data(data).call(chart);
-        });
-      </script>
+      <!-- end bubble chart -->
     </div>
-    <!-- end bubble chart -->
-  </div>
 
     <!-- Map -->
     <script>
@@ -779,4 +781,3 @@
 </body>
 
 </html>
-
