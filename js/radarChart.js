@@ -278,7 +278,7 @@ function RadarChart(id, data, options) {
       tooltip
         .attr('x', newX)
         .attr('y', newY)
-        .text((d.value * 100) + "% of " + d.group + " earns " + d.axis.toLowerCase())
+        .text((d.value * 100) + "% of people in " + d.group + " had no job in " + d.axis.toLowerCase())
         .transition().duration(200)
         .style('opacity', 1);
     })
