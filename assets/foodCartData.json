@@ -33,11 +33,6 @@
             {"name": "King Burrito", "size": 1},
             {"name": "Ella's Kitchen", "size": 1}
           ]
-        },
-        {
-          "name": "Lombard Pointe",
-          "comment": "NE Martin Luther King Jr Blvd and NE Lombard St",
-          "size": 1
         }
       ]
     },
@@ -134,22 +129,38 @@
         },
         {
           "name": "SW 9th and Alder",
+          "comment": "SW 9th and Alder",
           "children":[
+            {"name": "Bing Mi!", "comment": "Chinese cuisine", "size": 1},
+            {"name": "Eastern Thai", "comment": "Thai street food", "size": 1},
+            {"name": "La Jarochita 2", "comment": "Mexican cuisine", "size": 1},
+            {"name": "Egyptian Food", "comment": "Egyptian food cart", "size": 1},
+            {"name": "Beijing House", "comment": "Chinese food cart", "size": 1},
+            {"name": "Thai Food Factory", "comment": "Thai cuisine", "size": 1},
             {"name": "Saffron Indian", "size": 1},
             {"name": "Noodle House", "size": 1},
             {"name": "New Taste of India", "size": 1},
-            {"name": "808 Grinds", "size": 1},
             {"name": "Emame's Ethiopian", "size": 1},
-            {"name": "A Little Bit of Smoke", "size": 1},
-            {"name": "The Frying Scotsman", "size": 1},
-            {"name": "Roll Plus Sushi", "size": 1},
-            {"name": "Sawasdee Thai", "size": 1},
-            {"name": "Island Grill", "size": 1},
-            {"name": "The Whole Bowl", "size": 1},
-            {"name": "Aybla Mediterranean", "size": 1},
-            {"name": "I Love Thai Food", "size": 1},
-            {"name": "Houng's Vietnamese", "size": 1},
-            {"name": "Grilled Cheese Downtown", "size": 1}
+            {"name": "A Little Bit of Smoke", "comment": "BBQ food cart", "size": 1},
+            {"name": "The Frying Scotsman", "comment": "Traditional British Fish and Chips", "size": 1},
+            {"name": "Roll Plus Sushi", "comment": "Sushi and Miso soups", "size": 1},
+            {"name": "Sawasdee Thai", "comment": "One of the oldest and most popular Thai carts in Portland", "size": 1},
+            {"name": "Island Grill", "comment": "Hawaiian cuisine", "size": 1},
+            {"name": "The Whole Bowl", "comment": "Rice bowls", "size": 1}
+          ]
+        },
+        {
+          "name": "SW 9th and Washington",
+          "comment": "SW 9th and Washington",
+          "children":[
+            {"name": "La Camel", "comment": "Moroccan cuisine", "size": 1},
+            {"name": "Thick Deep Dish Pizza", "comment": "Chicago style pizza", "size": 1},
+            {"name": "Steak Your Claim", "comment": "Cheesesteak sandwiches and more", "size": 1},
+            {"name": "Noodle House", "comment": "Hand made noodles", "size": 1},
+            {"name": "Rolling Gourmet", "comment": "Asian fuision cuisine", "size": 1},
+            {"name": "New Taste of India", "comment": "Indian cuisine", "size": 1},
+            {"name": "Emame's Ethiopian Cuisine", "comment": "Ethiopian food cart", "size": 1},
+            {"name": "808 Grinds", "comment": "Hawaiian food cart", "size": 1}
           ]
         },
         {
@@ -239,19 +250,18 @@
           "name": "SW 5th and Stark",
           "comment": "SW 5th and Stark",
           "children":[
-            {"name": "Aybla Mediterranean Grill", "size": 1},
-            {"name": "Saigon", "size": 1},
-            {"name": "Boolkogi Korean BBQ", "size": 1},
-            {"name": "La Jarochita", "size": 1},
-            {"name": "Mr Taco", "size": 1},
-            {"name": "Spoons", "size": 1},
-            {"name": "Thai Sky", "size": 1},
-            {"name": "Philly Cheese Steaks", "size": 1},
-            {"name": "Julie's Food", "size": 1},
-            {"name": "Khob Khun Thai Food", "size": 1},
-            {"name": "Veli Thai Food", "size": 1},
-            {"name": "Real Taste of India", "size": 1},
-            {"name": "Tabor", "size": 1}
+            {"name": "Small Pharoah's", "comment": "Middle Eastern cuisine", "size": 1},
+            {"name": "Left Coast", "comment": "All-American diner food", "size": 1},
+            {"name": "Chez Dodo", "comment": "Mauritian food cart", "size": 1},
+            {"name": "Don Pedro", "comment": "Mexican cuisine", "size": 1},
+            {"name": "Hawaiian Grill", "comment": "Hawaiian food cart", "size": 1},
+            {"name": "BrunchBox", "comment": "Burgers and breakfast sandwiches!", "size": 1},
+            {"name": "Khob Khun Thai Food", "comment": "Thai cuisine", "size": 1},
+            {"name": "Bulkogi Korean BBQ", "comment": "Korean style BBQ", "size": 1},
+            {"name": "Tabor Czech Food", "comment": "Snitzelwiches and other Czech cuisine", "size": 1},
+            {"name": "Vietnamese Food To Go", "comment": "Vietnamese cuisine", "size": 1},
+            {"name": "Veli Thai Food", "comment": "Thai street food", "size": 1},
+            {"name": "Real Taste of India", "comment": "Indian food cart", "size": 1}
           ]
         },
         {
