@@ -24,12 +24,10 @@ A visual guide to Portland. An experimental demonstration of interactive data vi
 *clone the repository using:* `git clone https://github.com/winnk/D4`
 *Run a server to view the page. If you have pythong installed, you can use:* `python -m SimpleHTTPServer`
 
-## Technologies Used
-
-## Technology
+## Technology Used
 * [Git](https://git-scm.com/)
-* [HTML]
-* [CSS]
+* HTML
+* CSS
 * [D3.js](https://d3js.org/)
 * [Topojson](https://github.com/topojson/topojson)
 
@@ -44,8 +42,8 @@ The above copyright notice and this permission notice shall be included in all c
 
 ## Further Reading / Useful Links
 
-* [Bost.ocks.org](hhttps://bost.ocks.org/mike/)
+* [Bost.ocks.org](https://bost.ocks.org/mike/)
 
 Copyright &copy; 2017 **_Stormi Hoebelheinrich, Kaya Winn, Alex Lee, Blake Womack, and Chris Wainner_**
 
-[license]: (https://opensource.org/licenses/MIT)
+[license]:(https://opensource.org/licenses/MIT)
