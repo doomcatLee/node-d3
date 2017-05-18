@@ -62,7 +62,7 @@ $(function () {
       .tween("scale", function () {
         title = d.data.name;
         $("#foodCartTitle").text(title);
-        $("#foodCartTitle").css("color", color(d.data.name));
+        $("#foodCartTitle").css("color", color((d.children ? d : d.parent).data.name));
         var xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
           yd = d3.interpolate(y.domain(), [d.y0, 1]),
           yr = d3.interpolate(y.range(), [d.y0 ? 20 : 0, radius]);
