@@ -106,26 +106,30 @@
 
           <div class="front">
             <div class="back card2back">
-              <a href="http://imgur.com/uScQ0FI"><img src="/assets/img/Alex.jpg" alt="Profession Photo of Alex Lee"  width="200"></a>
+              <a href="http://imgur.com/uScQ0FI"><img src="/assets/img/Alex.jpg" alt="Profession Photo of Alex Lee" width="200"></a>
             </div>
           </div>
         </div>
       </div>
       <br>
-    </div>  <!-- end row -->
-    </header>
-    <main class="center-align">
-      <div class="foodCarts container">
-        <h1>Portland's Food Cart Pods</h1>
-        <h4>Click a pod to see an expanded view of the carts at that location. Hover over an arc to see the name of the food cart or pod.</h4>
-        <br>
-        <h4 id="foodCartTitle"></h4>
-        <svg id="foodCartGraph"></svg>
-      </div> <!--end food carts -->
+    </div>
+    <!-- end row -->
+  </header>
+  <main class="center-align">
+    <div class="foodCarts container">
+      <h1>Portland's Food Cart Pods</h1>
+      <h4>Click a pod to see an expanded view of the carts at that location. Hover over an arc to see the food pod or food cart name.</h4>
+      <br>
+      <h4>Current Location</h4>
+      <h5 id="foodCartTitle"></h5>
+      <svg id="foodCartGraph"></svg>
+    </div>
+    <!--end food carts -->
+
 
     <div id="colorStripe">
-        <div class="beer container">
-          <h1>
+      <div class="beer container">
+        <h1>
             Beer in Portland
           </h1>
         <h4>What do you think is Portland's most prominent style of beer?</h4>
@@ -135,7 +139,7 @@
         </div>
       </div>
     </div>
-<!--End Beer-->
+    <!--End Beer-->
 
     <!-- Start Pie -->
     <div class="pie row container">
@@ -173,62 +177,318 @@
     <!-- end bubble chart -->
   </div>
 
-<!-- Map -->
-<script>
+    <!-- Map -->
+    <script>
+      var width = 740,
+        height = 700;
 
-var width = 740,
-    height = 700;
+      var projection = d3.geoConicConformal()
+        .rotate([120.67, -45.52])
+        .parallels([44, 46])
+        .scale(125000)
+        .center([-1.388, 0.04])
+        .translate([width / 2, height / 2]);
 
-var projection = d3.geoConicConformal()
-    .rotate([120.67, -45.52])
-    .parallels([44, 46])
-    .scale(125000)
-    .center([-1.388, 0.04])
-    .translate([width / 2, height / 2]);
+      var path = d3.geoPath()
+        .projection(projection);
 
-var path = d3.geoPath()
-    .projection(projection);
+      var svg = d3.select("#artMap").append("svg")
+        .attr("width", width)
+        .attr("height", height);
 
-var svg = d3.select("#artMap").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+      svg.append("rect")
+        .attr("class", "background")
+        .attr("width", width)
+        .attr("height", height);
 
-svg.append("rect")
-    .attr("class", "background")
-    .attr("width", width)
-    .attr("height", height);
+      queue()
+        .defer(d3.json, "neighborhoods.topo.json")
+        .defer(d3.json, "points.json")
+        .defer(d3.json, "labels_overlap.topo.json")
+        .defer(d3.json, "labels.topo.json")
+        .await(makeMap);
 
-queue()
-    .defer(d3.json, "neighborhoods.topo.json")
-    .defer(d3.json, "points.json")
-    .defer(d3.json, "labels_overlap.topo.json")
-    .defer(d3.json, "labels.topo.json")
-    .await(makeMap);
+      function makeMap(error, hoods, points, overlap, labels) {
 
-function makeMap(error, hoods, points, overlap, labels) {
+        neighborhoods = topojson.feature(hoods, hoods.objects.neighborhoods)
+        dymo_overlapping_labels = topojson.feature(overlap, overlap.objects.labels_overlap)
+        dymo_labels = topojson.feature(labels, labels.objects.labels)
 
-  neighborhoods = topojson.feature(hoods, hoods.objects.neighborhoods)
-  dymo_overlapping_labels = topojson.feature(overlap, overlap.objects.labels_overlap)
-  dymo_labels = topojson.feature(labels, labels.objects.labels)
+        //Neighborhood outlines
+        svg.append("g")
+          .attr("class", "neighborhoods")
+          .selectAll("path")
+          .data(neighborhoods.features)
+          .enter().append("path")
+          .attr("d", path)
 
-  //Neighborhood outlines
-  svg.append("g")
-      .attr("class", "neighborhoods")
-    .selectAll("path")
-      .data(neighborhoods.features)
-    .enter().append("path")
-      .attr("d", path)
+        //Append Dymo points
+        svg.selectAll(".symbol")
+          .data(points.features)
+          .enter().append("path")
+          .attr("class", "symbol")
+          .attr("d", path.pointRadius(2));
 
-  //Append Dymo points
-  svg.selectAll(".symbol")
-      .data(points.features)
-    .enter().append("path")
-      .attr("class", "symbol")
-      .attr("d", path.pointRadius(2));
+      }
+    </script>
+    <!--  End Map -->
 
-  }
-</script>
-<!--  End Map -->
+    <div id="niggaLee" class="container">
+      <div class="raceTitle">
+        <h2>Oregon Unemployment Rate</h2>
+        <h4>Compared with CA, CO, and NY </h4>
+      </div>
+      <div class="row">
+        <div class="col s3">
+          <div class='my-legend'>
+            <div class='legend-scale'>
+              <ul class='legend-labels'>
+                <li><span style='background:#ffd644;'></span>Oregon</li>
+                <li><span style='background:#CC3442;'></span>California</li>
+                <li><span style='background:#00A0B0;'></span>Colorado</li>
+                <li><span style='background:#13ad0c;'></span>New York</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s9">
+          <div class="radarChart1"></div>
+        </div>
+      </div>
+
+      <script src="js/radarChart.js"></script>
+      <script>
+        var margin = {
+            top: 100,
+            right: 100,
+            bottom: 100,
+            left: 100
+          },
+          width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
+          height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+
+        //////////////////////////////////////////////////////////////
+        ////////////////////////// Data //////////////////////////////
+        //////////////////////////////////////////////////////////////
+
+        var data = [
+          [ //Portland
+            {
+              axis: "2007",
+              value: 0.051,
+              group: "Oregon"
+            },
+            {
+              axis: "2008",
+              value: 0.053,
+              group: "Oregon"
+            },
+
+            {
+              axis: "2009",
+              value: 0.103,
+              group: "Oregon"
+            },
+
+            {
+              axis: "2010",
+              value: 0.109,
+              group: "Oregon"
+            },
+            {
+              axis: "2011",
+              value: 0.09,
+              group: "Oregon"
+
+            },
+            {
+              axis: "2012",
+              value: 0.091,
+              group: "Oregon"
+            },
+            {
+              axis: "2013",
+              value: 0.085,
+              group: "Oregon"
+            },
+            {
+              axis: "2014",
+              value: 0.073,
+              group: "Oregon"
+            },
+            {
+              axis: "2015 ",
+              value: 0.059,
+              group: "Oregon"
+            }
+
+          ],
+          [ //"African American Resident"
+            {
+              axis: "2007",
+              value: 0.05,
+              group: "California"
+            },
+            {
+              axis: "2008",
+              value: 0.061,
+              group: "California"
+            },
+            {
+              axis: "2009",
+              value: 0.098,
+              group: "California"
+            },
+            {
+              axis: "2010",
+              value: 0.121,
+              group: "California"
+            },
+            {
+              axis: "2011",
+              value: 0.12,
+              group: "California"
+            },
+            {
+              axis: "2012",
+              value: 0.109,
+              group: "California"
+            },
+            {
+              axis: "2013",
+              value: 0.095,
+              group: "California"
+            },
+            {
+              axis: "2014",
+              value: 0.081,
+              group: "California"
+            },
+            {
+              axis: "2015",
+              value: 0.068,
+              group: "California"
+            }
+
+          ],
+          [ //Asian American Resident
+            {
+              axis: "2007",
+              value: 0.037,
+              group: "Colorado"
+            },
+            {
+              axis: "2008",
+              value: 0.042,
+              group: "Colorado"
+            },
+            {
+              axis: "2009",
+              value: 0.063,
+              group: "Colorado"
+            },
+            {
+              axis: "2010",
+              value: 0.085,
+              group: "Colorado"
+            },
+            {
+              axis: "2011",
+              value: 0.088,
+              group: "Colorado"
+            },
+            {
+              axis: "2012",
+              value: 0.081,
+              group: "Colorado"
+            },
+            {
+              axis: "2013",
+              value: 0.073,
+              group: "Colorado"
+            },
+            {
+              axis: "2014",
+              value: 0.059,
+              group: "Colorado"
+            },
+            {
+              axis: "2015",
+              value: 0.041,
+              group: "Colorado"
+            }
+
+          ],
+          [ //Hispanic Resident
+            {
+              axis: "2007",
+              value: 0.043,
+              group: "New York"
+            },
+
+            {
+              axis: "2008",
+              value: 0.049,
+              group: "New York"
+            },
+            {
+              axis: "2009",
+              value: 0.072,
+              group: "New York"
+            },
+            {
+              axis: "2010",
+              value: 0.088,
+              group: "New York"
+            },
+            {
+              axis: "2011",
+              value: 0.083,
+              group: "New York"
+            },
+            {
+              axis: "2012",
+              value: 0.086,
+              group: "New York"
+            },
+            {
+              axis: "2013",
+              value: 0.08,
+              group: "New York"
+            },
+            {
+              axis: "2014",
+              value: 0.069,
+              group: "New York"
+            },
+            {
+              axis: "2015",
+              value: 0.057,
+              group: "New York"
+            }
+          ]
+        ];
+        //////////////////////////////////////////////////////////////
+        //////////////////// Draw the Chart //////////////////////////
+        //////////////////////////////////////////////////////////////
+
+        var color = d3.scale.ordinal()
+          .range(["#EDC951", "#CC333F", "#00A0B0", "#7cc136"]);
+
+        var radarChartOptions = {
+          w: width,
+          h: height,
+          margin: margin,
+          maxValue: 0.06,
+          levels: 3,
+          roundStrokes: true,
+          color: color
+        };
+        //Call function to draw the Radar chart
+        RadarChart(".radarChart1", data, radarChartOptions);
+      </script>
+    </div>
+
 
 
 
@@ -486,6 +746,9 @@ function makeMap(error, hoods, points, overlap, labels) {
         RadarChart(".radarChart", data, radarChartOptions);
       </script>
     </div>
+
+
+
   </main>
   <footer class="page-footer black">
     <div class="container">
@@ -516,3 +779,4 @@ function makeMap(error, hoods, points, overlap, labels) {
 </body>
 
 </html>
+
