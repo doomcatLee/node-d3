@@ -114,20 +114,18 @@
     <main class="container center-align">
       <div class="foodCarts">
         <h1>Portland's Food Cart Pods</h1>
-        <h3>Hover over an arc to see the food pod/food cart name</h3>
-        <h3>Click a food pod to see an expanded view of the carts at that location</h3>
+        <h4>Click a pod to see an expanded view of the carts at that location. Hover over an arc to see the food pod or food cart name.</h4>
         <div id="foodCartTitle"></div>
         <svg id="foodCartGraph"></svg>
       </div> <!--end food carts -->
       <div class="beer">
         <h1>
-          Portland's Most Popular Brew Style
+          Beer in Portland
         </h1>
-      <h3>What do you think is Portland's most prominent beer?</h3>
+      <h4>What do you think is Portland's most prominent style of beer?</h4>
       <div class="beerGraph">
         <svg id="beerSvg" width="960" height="550"></svg>
         <h5><span class="beerResults">Select a style to see the results.</span></h5>
-
       </div>
     </div>
     <!--End Beer-->
@@ -141,7 +139,8 @@
     </div>
     <!-- end pie -->
     <div class="bubbleChart">
-      <h1>Oregon Wine Grapes by Variety: Annual Tons Harvested</h1>
+      <h1>Oregon Wine Grapes</h1>
+      <h4>Annual Tons Harvested of each Variety</h4>
       <div class="chart-example" id="chart"><svg></svg>
       </div>
       <script>
@@ -218,17 +217,15 @@ function makeMap(error, hoods, points, overlap, labels) {
 
 
     <div id="niggaLee" class="container">
-
-
-
-      <h2>Oregon Household Income by Race</h2>
+      <h2>Oregon Income & Race</h2>
+      <h4>Annual Household Income by Race</h4>
       <div class='my-legend'>
         <div class='legend-scale'>
           <ul class='legend-labels'>
-            <li><span style='background:#FFFFB3;'></span>White Resident</li>
-            <li><span style='background:#FB8072;'></span>African American Resident</li>
-            <li><span style='background:#4286f4;'></span>Asian American Resident</li>
-            <li><span style='background:#19e58c;'></span>Hispanic Resident</li>
+            <li><span style='background:#ffd644;'></span>White Resident</li>
+            <li><span style='background:#CC3442;'></span>African American Resident</li>
+            <li><span style='background:#00A0B0;'></span>Asian American Resident</li>
+            <li><span style='background:#13ad0c;'></span>Hispanic Resident</li>
           </ul>
         </div>
       </div>
