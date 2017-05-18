@@ -13,12 +13,12 @@
             {"name": "Koi Fusion", "comment": "Korean Fusion Tacos", "size": 1},
             {"name": "HomeGrown Smoker", "comment": "Vegan BBQ", "size": 1},
             {"name": "Native Bowl", "comment": "Vegan rice bowls", "size": 1},
-            {"name": "503 Burger", "size": 1},
+            {"name": "503 Burger", "comment": "Burger food cart", "size": 1},
             {"name": "Amigos", "size": 1},
             {"name": "Dirty Tae Toe", "size": 1},
             {"name": "Five Mississippi Coffee", "size": 1},
             {"name": "Roast", "size": 1},
-            {"name": "Teppanyaki Hut", "size": 1},
+            {"name": "Teppanyaki Hut", "comment": "Ramen and sushi bar", "size": 1},
             {"name": "White Elephant Asian Fusion", "size": 1},
             {"name": "Big-Ass Sandwiches", "size": 1},
             {"name": "Miss Kate's Souther Kitchen", "size": 1},
@@ -33,6 +33,31 @@
             {"name": "King Burrito", "size": 1},
             {"name": "Ella's Kitchen", "size": 1}
           ]
+        },
+        {
+          "name": "N Lombard and Burr",
+          "comment": "@Kruger",
+          "children": [
+            {"name": "Farmfood", "comment": "Breakfast sandwiches", "size": 1},
+            {"name": "Chowdah", "comment": "Clam chowders and cheesesteaks", "size": 1},
+            {"name": "Che Cafe", "comment": "Hot dogs!", "size": 1}
+          ]
+        },
+        {
+          "name": "N Williams",
+          "comment": "N Williams",
+          "children": [
+            {"name": "MF Tasty", "comment": "Southwestern dishes", "size": 1},
+            {"name": "Que Sabrosa", "comment": "Tacos!", "size": 1}
+          ]
+        },
+        {
+          "name": "St. Johns",
+          "comment": "St. Johns",
+          "children": [
+            {"name": "Arlo's Fish and Chips", "comment": "Beer battered fish and chips", "size": 1},
+            {"name": "Velas Cart", "comment": "Mexican cuisine", "size": 1}
+          ]
         }
       ]
     },
@@ -42,6 +67,16 @@
       "children": [
         {
           "name": "Alberta15",
+          "children":[
+            {"name": "Cultured Caveman", "size": 1},
+            {"name": "Organic Island Snow Shave Ice", "size": 1},
+            {"name": "Green Monsters", "size": 1},
+            {"name": "Katsu Zoku", "size": 1},
+            {"name": "Stumptown Dumplings", "size": 1}
+          ]
+        },
+        {
+          "name": "NE 11th and Alberta",
           "children":[
             {"name": "Cultured Caveman", "size": 1},
             {"name": "Organic Island Snow Shave Ice", "size": 1},
@@ -73,12 +108,6 @@
     },
     {
       "name": "Southeast",
-      "children": [
-
-      ]
-    },
-    {
-      "name": "Southwest",
       "children": [
 
       ]
