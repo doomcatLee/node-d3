@@ -33,6 +33,20 @@ padding: 80px;}
 h1 {
   text-align: center;
 }
+#headerText{
+  font-family: 'Russo One', sans-serif;
+  margin: 0px;
+  font-size: 100px;
+  text-align: left;
+  width: 600px;
+  margin-left: 10%;
+}
+.head1{
+  font-size: 116px;
+}
+.head3{
+  font-size: 210px;
+}
 /*flipping images*/
 .backOfCard {
   text-align: center;
@@ -164,10 +178,28 @@ h1 {
   margin-right: -50px;
   text-align: left;
 }
-#artMap{
-  margin-left: -180px;
-  z-index: 1;
+#pieText{
+  text-align: center;
 }
-#pie{
-  z-index: 3;
+.bubble{
+  padding-top: 20px;
+  background-color: #9e9c9c;
+  padding-bottom: 150px;
+}
+.bubbleChart h1, .bubbleChart h4 {
+  color: white;
+}
+.chart-example {
+  background-color: white;
+  padding-top: 80px;
+  padding-right: 20px;
+  width: 700px;
+  height: 700px;
+  display: block;
+  margin: auto;
+  border-radius: 100%;
+}
+.pie, .bubble, #niggaLee, .foodCarts {
+  margin-top: 50px;
+  margin-bottom: 100px;
 }

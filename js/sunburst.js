@@ -36,6 +36,8 @@ $(function () {
   d3.json("../assets/foodCartData.json", function (error, root) {
     if (error) throw error;
 
+    var foodCartTooltip = d3.select(".foodCarts").append("div").attr("class", "toolTip");
+
     root = d3.hierarchy(root);
     root.sum(function (d) { return d.size; });
 
@@ -50,8 +52,16 @@ $(function () {
         .attr("d", arc)
         .style("fill", function (d, i) { return color((d.children ? d : d.parent).data.name); })
         .on("click", click)
-      .append("title")
-        .text(function (d) { return d.data.name + "\n" + d.data.comment; });
+        .on("mousemove", function(d){
+          foodCartTooltip
+            .style("left", d3.event.pageX - 60 + "px")
+            .style("top", d3.event.pageY - 85 + "px")
+            .style("display", "inline-block")
+            .html(d.data.name + "<br>" + d.data.comment)
+        })
+        .on("mouseout", function(d){
+          foodCartTooltip.style("display", "none");
+        });
 
     $("#foodCartTitle").text(title);
   });
@@ -62,7 +72,7 @@ $(function () {
       .tween("scale", function () {
         title = d.data.name;
         $("#foodCartTitle").text(title);
-        $("#foodCartTitle").css("color", color(d.data.name));
+        $("#foodCartTitle").css("color", color((d.children ? d : d.parent).data.name));
         var xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
           yd = d3.interpolate(y.domain(), [d.y0, 1]),
           yr = d3.interpolate(y.range(), [d.y0 ? 20 : 0, radius]);

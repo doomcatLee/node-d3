@@ -148,6 +148,7 @@
     },
     {
       "name": "Southeast",
+      "comment": "Southeast",
       "children": [
         {
           "name": "3405 SE 82nd Ave",
@@ -162,7 +163,121 @@
           "comment": "SE 102nd and Stark",
           "children": [
             {"name": "Ninja Wings", "comment": "Thai chicken wings", "size": 1},
-            {"name": "Thai Garden Food Stand", "comment": "Authentic Thai cuisine", "size": 1}
+            {"name": "Thai Garden Food Stand", "comment": "Authentic Thai cuisine", "size": 1},
+            {"name": "La Cocina De Chepe", "comment": "Salvadorian cuisine", "size": 1},
+            {"name": "Philippine Cuisine", "comment": "Authentic Phillipine food", "size": 1},
+            {"name": "Taqueria Los Arcos", "comment": "Fresh homemade tortillas", "size": 1},
+            {"name": "Taqueria Antojitos Yucatecos", "comment": "Yucatan style mexican", "size": 1}
+          ]
+        },
+        {
+          "name": "SE 11th and Tacoma",
+          "comment": "SE 11th and Tacoma",
+          "children": [
+            {"name": "Village Patisserie", "comment": "Breakfast and lunch sandwiches", "size": 1},
+            {"name": "Papa Lee's Kitchen", "comment": "Sandwiches", "size": 1},
+            {"name": "Straits Kitchen", "comment": "Malaysian Street food", "size": 1},
+            {"name": "Polli-Taco", "comment": "Rotisserie chicken", "size": 1}
+          ]
+        },
+        {
+          "name": "SE 12th and Hawthorne",
+          "comment": "SE 12th and Hawthorne",
+          "children": [
+            {"name": "Chicken and Guns", "comment": "Roasted latin chicken", "size": 1},
+            {"name": "PBJ's Grilled Cartopia", "comment": "Grilled gourment sandwiches", "size": 1},
+            {"name": "El Brasero", "comment": "Breakfast and vegetarian burritos", "size": 1},
+            {"name": "Pyro Pizza", "comment": "Wood oven pizza", "size": 1},
+            {"name": "Perierra Creperie", "comment": "Crepes of all kinds", "size": 1},
+            {"name": "Potato Champion", "comment": "Belgian style fries", "size": 1}
+          ]
+        },
+        {
+          "name": "SE 13th and Lexington",
+          "comment": "SE 13th and Lexington",
+          "children": [
+            {"name": "Luang Prabang", "comment": "Laotian cuisine", "size": 1},
+            {"name": "Russian Horse", "comment": "Russian cuisine", "size": 1}
+          ]
+        },
+        {
+          "name": "SE 28th and Ankeny",
+          "comment": "SE 28th and Ankeny",
+          "children": [
+            {"name": "Capture Beer Bus", "comment": "Rotating selection of beers and ciders", "size": 1},
+            {"name": "Puleha Pizza Pod 28", "comment": "Thin crust barbequed pizza", "size": 1},
+            {"name": "Guero", "comment": "Tacos and Tortas", "size": 1},
+            {"name": "Wolf and Bear's", "comment": "Iraqi and Isreali cuisine", "size": 1}
+          ]
+        },
+        {
+          "name": "SE 28th and Division",
+          "comment": "SE 28th and Division at Tidbit",
+          "children": [
+            {"name": "Wasabi Sushi PDX", "comment": "Sushi cart", "size": 1},
+            {"name": "Paper Bag Pizza", "comment": "Wood fired pizza", "size": 1},
+            {"name": "Back to Eden Bakery Cart at Tidbit", "comment": "Wood fired pizza", "size": 1},
+            {"name": "Slow Squeeze Juice", "comment": "Fresh, cold-pressed juices", "size": 1},
+            {"name": "Pyro's Wicked Wiches", "comment": "Iconic sandwiches", "size": 1},
+            {"name": "Dog Town Food Cart", "comment": "Gourment hot dogs", "size": 1},
+            {"name": "Scout Beer Garden - Tidbit", "comment": "Beer cart", "size": 1},
+            {"name": "Green Monsters at Tidbit", "comment": "Custom salad bowls", "size": 1},
+            {"name": "Earth Burgers", "comment": "Vegetarian and vegan burgers", "size": 1},
+            {"name": "Ingrid's Sandinavian Food", "comment": "Lefse wraps and other Scandinavian cuisine", "size": 1},
+            {"name": "Namu at Tidbit", "comment": "Hawaiian and Korean dishes", "size": 1},
+            {"name": "Azul Tequila Taqueria at Tidbit", "comment": "Excellent menu of Mexican cuisine", "size": 1},
+            {"name": "E-san Thai at Tidbit", "comment": "Thai cuisine", "size": 1},
+            {"name": "Lodekka Double Decker Dress Soup", "comment": "Vintange clothes and knick-knacks", "size": 1},
+            {"name": "Hapa Ramen", "comment": "Ramen food cart", "size": 1}
+          ]
+        },
+        {
+          "name": "SE 50th and Ivon",
+          "comment": "A-la carts",
+          "children": [
+            {"name": "Stumptown Kimbap", "comment": "Korean hand rolls", "size": 1},
+            {"name": "La Arepa Venezuelan", "comment": "Venezuelan cuisine", "size": 1},
+            {"name": "Istanbul Delight", "comment": "Turkish and Middle Eastern flavors", "size": 1},
+            {"name": "Chicken Run", "comment": "Thai dishes", "size": 1},
+            {"name": "Scoop", "comment": "Ice cream!", "size": 1}
+          ]
+        },
+        {
+          "name": "SE 52nd and Foster",
+          "comment": "SE 52nd and Foster",
+          "children": [
+            {"name": "Operation Wings", "comment": "Chicken wings", "size": 1},
+            {"name": "Plan Pastries", "comment": "Cookies, brownies, and cupcakes", "size": 1},
+            {"name": "The Angry Unicorn", "comment": "Burgers and bites", "size": 1},
+            {"name": "The Sugar Shop", "comment": "Sweets and baked goods", "size": 1},
+            {"name": "Roadrunner BBQ", "comment": "Smoked brisket and BBQ", "size": 1},
+            {"name": "J Mo's Sandwich Shack", "comment": "Gourment sandwiches", "size": 1},
+            {"name": "The Egg Carton", "comment": "High quality breakfast vittles", "size": 1},
+            {"name": "Kusina sa Gulong", "comment": "Philippine cuisine", "size": 1},
+            {"name": "Sanjai's Teriyaki", "comment": "Teriyaki and yakisoba noodles", "size": 1},
+            {"name": "Year of the Fish", "comment": "Fish and Chips, Seafood", "size": 1},
+            {"name": "Happy Espresso", "comment": "Espresso, hot drinks, cold drinks", "size": 1},
+            {"name": "El Sultan", "comment": "Mediterranean and Mexican cuisine", "size": 1},
+            {"name": "Big-Ass Sandwiches", "comment": "Awesome sandwiches", "size": 1}
+          ]
+        },
+        {
+          "name": "SE 82nd and Harney",
+          "comment": "SE 82nd and Harney",
+          "children": [
+            {"name": "Mizu Ramen", "comment": "Ramen!", "size": 1},
+            {"name": "Anything Pastable!", "comment": "Classic Italian sauces and pastas", "size": 1},
+            {"name": "In & Out Kitchen", "comment": "Vietnamese specialties", "size": 1},
+            {"name": "Maine Street Lobster Company", "comment": "New England cuisine", "size": 1},
+            {"name": "The Coop Chicken and Waffles", "comment": "Southern food cart", "size": 1},
+            {"name": "OOh Pasta", "comment": "Pasta dishes with a twist", "size": 1},
+            {"name": "Da Fat Boyz BBQ", "comment": "Awesome BBQ", "size": 1},
+            {"name": "The Good and Evil Wrap Co", "comment": "Offering healthy and not-so-healthy options", "size": 1},
+            {"name": "Kesone Asian Fusion", "comment": "Thai and Laotian fusion cuisine", "size": 1},
+            {"name": "The Gyros Spot", "comment": "Gyros, falafel, and other Greek specialties", "size": 1},
+            {"name": "Anything Else? Thai food", "comment": "Thai street food cart", "size": 1},
+            {"name": "It's Thai Food", "comment": "Home cooking Thai style", "size": 1},
+            {"name": "Pupuseria La Miguelena", "comment": "Salvadorian cuisine", "size": 1}
           ]
         }
       ]
