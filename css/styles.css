@@ -171,3 +171,21 @@ h1 {
 #pie{
   z-index: 3;
 }
+.bubble{
+  padding-top: 20px;
+  background-color: #9e9c9c;
+  padding-bottom: 150px;
+}
+.bubbleChart h1, .bubbleChart h4 {
+  color: white;
+}
+.chart-example {
+  background-color: white;
+  padding-top: 80px;
+  padding-right: 20px;
+  width: 700px;
+  height: 700px;
+  display: block;
+  margin: auto;
+  border-radius: 100%;
+}
