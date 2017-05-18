@@ -111,14 +111,16 @@
       <br>
     </div>  <!-- end row -->
     </header>
-    <main class="container center-align">
-      <div class="foodCarts">
+    <main class="center-align">
+      <div class="foodCarts container">
         <h1>Portland's Food Cart Pods</h1>
         <h4>Click a pod to see an expanded view of the carts at that location. Hover over an arc to see the food pod or food cart name.</h4>
         <div id="foodCartTitle"></div>
         <svg id="foodCartGraph"></svg>
       </div> <!--end food carts -->
-      <div class="beer">
+
+
+      <div class="beer container">
         <h1>
           Beer in Portland
         </h1>
@@ -139,7 +141,7 @@
       <script type="text/javascript" src="js/pie.js"></script>
     </div>
     <!-- end pie -->
-    <div class="bubbleChart">
+    <div class="bubbleChart container">
       <h1>Oregon Wine Grapes</h1>
       <h4>Annual Tons Harvested of each Variety</h4>
       <div class="chart-example" id="chart"><svg></svg>
@@ -217,25 +219,27 @@ function makeMap(error, hoods, points, overlap, labels) {
 
 
     <div id="niggaLee" class="container">
-      <h2>Oregon Income & Race</h2>
-      <h4>Annual Household Income by Race</h4>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class='my-legend'>
-        <div class='legend-scale'>
-          <ul class='legend-labels'>
-            <li><span style='background:#ffd644;'></span>White Resident</li>
-            <li><span style='background:#CC3442;'></span>African American Resident</li>
-            <li><span style='background:#00A0B0;'></span>Asian American Resident</li>
-            <li><span style='background:#13ad0c;'></span>Hispanic Resident</li>
-          </ul>
+      <div class="raceTitle">
+        <h2>Oregon Income & Race</h2>
+        <h4>Annual Household Income by Race</h4>
+      </div>
+      <div class="row">
+        <div class="col s3">
+          <div class='my-legend'>
+            <div class='legend-scale'>
+              <ul class='legend-labels'>
+                <li><span style='background:#ffd644;'></span>White Resident</li>
+                <li><span style='background:#CC3442;'></span>African American Resident</li>
+                <li><span style='background:#00A0B0;'></span>Asian American Resident</li>
+                <li><span style='background:#13ad0c;'></span>Hispanic Resident</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s9">
+          <div class="radarChart"></div>
         </div>
       </div>
-
-
-      <div class="radarChart"></div>
 
       <script src="js/radarChart.js"></script>
       <script>

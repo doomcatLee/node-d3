@@ -113,7 +113,6 @@ h1 {
 
 #niggaLee svg
 {
-    margin-top: -15%;
 }
 
 
@@ -155,3 +154,9 @@ h1 {
   .my-legend a {
     color: #777;
     }
+.my-legend {
+  margin-top: 240px;
+  float: right;
+  margin-right: -50px;
+  text-align: left;
+}
