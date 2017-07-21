@@ -1,0 +1,14 @@
+{
+    "name": "d3-node",
+    "description": "D3 runnign on Express.js",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "express": "latest",
+        "body-parser": "^1.17.1"
+
+    },
+    "scripts":{
+      "start": "node server.js"
+    }
+}
